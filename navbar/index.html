@@ -3,22 +3,44 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Navbar</title>
-    <link rel="stylesheet" href="./nb_1.css" />
+    <title>Practice Multiple Headers</title>
+
+    <!-- Linking separate CSS files for each header -->
+    <link rel="stylesheet" href="./style/h-1.css" />
+    <link rel="stylesheet" href="./style/h-2.css" />
   </head>
   <body>
-    <header>
-      <div class="nav1">
-        <h3 class="logo">Logo style #1</h3>
-        <nav>
-          <ul class="nav_links">
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">About</a></li>
-          </ul>
-        </nav>
-        <a href="#"><button>Contact</button></a>
-      </div>
+    <header id="header-1">
+      <h3 class="logo">Logo style #1</h3>
+      <nav>
+        <ul class="nav_links">
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+      </nav>
+      <a href="#"><button>Contact</button></a>
     </header>
+
+    <!-- Visual separation -->
+    <hr />
+
+    <!-- Header 2 -->
+    <header id="header-2">
+      <!-- <div class="logo">John Doe</div> -->
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Gallery</a></li>
+          <li id="contact"><a href="#">Contact us</a></li>
+        </ul>
+      </nav>
+      <!-- <button class="login-btn">Sign Up</button> -->
+    </header>
+
+    <!-- Visual separation -->
+    <hr />
   </body>
 </html>
